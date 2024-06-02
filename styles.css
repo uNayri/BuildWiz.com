@@ -1,0 +1,204 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 2em;  /* Увеличиваем размер логотипа */
+    font-weight: bold;
+    color: white;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;  /* Центрирование */
+}
+
+.search-bar {
+    width: 80%;
+    padding: 10px;  /* Увеличиваем высоту */
+    font-size: 1em;  /* Увеличиваем размер шрифта */
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+    padding: 10px;  /* Увеличиваем высоту */
+    background-color: #3c8dbc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;  /* Увеличиваем размер шрифта */
+}
+
+.search-button:hover {
+    background-color: #327ba8;
+}
+
+.account-container {
+    display: flex;
+    align-items: center;
+}
+
+.account {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.account img {
+    width: 24px;  /* Увеличиваем размер иконки */
+    margin-right: 5px;
+}
+
+.account span {
+    cursor: pointer;
+}
+
+.account span:hover {
+    text-decoration: underline;
+}
+
+.account .dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.account:hover .dropdown {
+    display: block;
+}
+
+.account .dropdown a {
+    display: block;
+    color: black;
+    padding: 5px 0;
+}
+
+.account .dropdown a:hover {
+    background-color: #f4f4f4;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart img {
+    width: 24px;  /* Увеличиваем размер иконки */
+    margin-right: 5px;
+}
+
+.cart span {
+    font-size: 1em;  /* Увеличиваем размер текста */
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #444;
+}
+
+.main-nav ul li {
+    margin: 0 10px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.promo-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.feature {
+    text-align: center;
+}
+
+.star-rating {
+    color: gold;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.category {
+    background-color: #fff;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+}
+
+.category h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category ul li {
+    margin: 5px 0;
+}
+
+.category ul li:hover {
+    text-decoration: underline;
+}
